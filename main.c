@@ -8,8 +8,7 @@ int main()
     float english;
     float total;
     float average;
-    char grade;
-    char result[10];
+
 
     printf("Enter your mathematics marks \n");
     scanf("%f",&mathematics);
@@ -21,29 +20,29 @@ int main()
     total= mathematics+science+english ;
     average= total/3.0;
 
-    printf("Total :%d\n",total);
-    printf("Average :%.2d\n",average);
+    printf("Total :%0.f\n",total);
+    printf("Average :%.2f\n",average);
 
     if (100>average>80){
-     grade = 'A';
+     printf("Grade: A\n");
     }
      else if  (79>average>70){
-      grade = 'B';
+     printf("Grade: B\n");
      }
      else if (69> average>60){
-      grade = 'C';
+      printf("Grade: C\n");
      }
      else if (59>average>50){
-      grade = 'D';
+      printf("Grade: D\n");
      }
     else {
-      grade = 'F';
+      printf("Grade: F");
      }
     if (mathematics>=40&& science>=40&& english>=40){
-        result = "Pass";
+        printf("Result: Pass\n");
     }
         else{
-        result= "Fail";
+        printf("Result: Fail\n");
     }
 
 
